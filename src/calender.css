@@ -1,0 +1,112 @@
+.header,
+    .body {
+      overflow: hidden;
+      width: 175px;
+    }
+    .input{
+      width: 131px;
+      padding: 0 8px;
+      line-height: 28px;
+      border: 1px solid #e5e5e5;
+    }
+    .header>div,
+    .body>div {
+      float: left;
+      width: 25px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+    .body>div.date{
+      cursor: pointer;
+    }
+    .calender{
+      width: 175px;
+      display: none;
+    }
+    .calender:hover{
+      display: block;
+    }
+    .active-cal{
+      /* border:1px solid #ccc; */
+      color: #bc2729;
+    }
+    
+    .calender-box{
+      position: relative;
+    }
+    .calender{
+      /* height: 150px; */
+      overflow: hidden;
+      position: absolute;
+      background: #fff;
+      text-align: center;
+      border: 1px solid #eee;
+      /* top:30px; */
+      padding:0 8px 8px;
+      -webkit-box-shadow: 0px 0px 5px #ccc;
+              box-shadow: 0px 0px 5px #ccc;
+      z-index: 999;
+    }
+    .body .date{
+      font-size: 13px;
+      z-index: 999;
+    }
+    .header{
+      background: #f5f5f5;
+    }
+    .year,.month{
+      cursor: pointer;
+    }
+    .year-list{
+      float: left;
+      width: 58px;
+      line-height: 30px;
+    }
+    .pre,.pre-year{
+      float: left;
+    }
+    .next,.next-year{
+      float: right;
+    }
+    .date-wrapper{
+      overflow: hidden;
+    }
+    .month-list{
+      float: left;
+      width: 58px;
+      line-height: 30px;
+      cursor: pointer;
+    }
+    .calender-header{
+      line-height: 30px;
+      
+    }
+    
+    .pre,.next,.pre-year,.next-year,.year-list{
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px){
+      .header,
+    .body,.calender {
+      width: 315px;
+    }
+    
+    .header>div,
+    .body>div {
+      width: 45px;
+      height: 40px;
+      line-height: 40px;
+    }
+    .calender{
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+    .calender-header,.year-list,.month-list{
+      line-height: 40px;
+    }
+    .year-list,.month-list{
+      width: 105px;
+    }
+    }
